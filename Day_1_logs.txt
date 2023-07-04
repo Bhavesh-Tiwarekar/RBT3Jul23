@@ -1,0 +1,1211 @@
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 ~
+$ ls
+'3D Objects'/
+ ActivePerl-5.28/
+ Anaconda3/
+ AppData/
+'Application Data'@
+ Bhavesh_Python_Practice/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IdeaProjects/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{098ec1e0-e8bf-11ed-bed4-cca1577627fc}.TM.blf
+ NTUSER.DAT{098ec1e0-e8bf-11ed-bed4-cca1577627fc}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{098ec1e0-e8bf-11ed-bed4-cca1577627fc}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+'OneDrive - Persistent Systems Limited'/
+ PanGPA.log
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Untitled.ipynb
+ Untitled1.ipynb
+ Videos/
+'mcafee dlp quarantined files'/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ test.txt
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 ~
+$ cd d:
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d
+$ cd Learning/Git/RBT3Jul23/
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23
+$ git init
+Initialized empty Git repository in D:/Learning/Git/RBT3Jul23/.git/
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=bhavesh
+user.email=bhavesh_tiwarekar@persistent.com
+core.editor=TextPad
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+(END)
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=bhavesh
+user.email=bhavesh_tiwarekar@persistent.com
+core.editor=TextPad
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+(END)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git add File1.txt
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git commit -m "WI1: File1 created with welcome message"
+[master (root-commit) f9e0584] WI1: File1 created with welcome message
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File1.txt
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log
+commit f9e0584680e1064c10d71799de62a66a3f024e3f (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git add .
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File1.txt
+
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git commit -m "WI1: File1 modified, num of session days added."
+[master 314ca39] WI1: File1 modified, num of session days added.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git add .
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File1.txt
+
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git commit -m "WI1: Updated session timings in File1"
+[master 57d8dfc] WI1: Updated session timings in File1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        A.class
+        b.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git add .
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git commit -m "Config: Added GitIgnore file to ignore class and jar files."
+[master ee42a9b] Config: Added GitIgnore file to ignore class and jar files.
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+ ESCOC
+90ee642 (HEAD -> master)
+stent.com>
+
+
+re class and jar files.
+
+3adbfb6
+stent.com>
+
+
+1
+
+8d0dea4
+stent.com>
+
+
+days added.
+
+f024e3f
+stent.com>
+
+
+age
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+ ESCOC
+90ee642 (HEAD -> master)
+stent.com>
+
+
+re class and jar files.
+
+3adbfb6
+stent.com>
+
+
+1
+
+8d0dea4
+stent.com>
+
+
+days added.
+
+f024e3f
+stent.com>
+
+
+age
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+ ESCOC
+90ee642 (HEAD -> master)
+stent.com>
+
+
+re class and jar files.
+
+3adbfb6
+stent.com>
+
+
+1
+
+8d0dea4
+stent.com>
+
+
+days added.
+
+f024e3f
+stent.com>
+
+
+age
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+(END)...skipping...
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOD
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+      0 [sig] bash 1861! sigpacket::process: Suppressing signal 18 to win32 process (pid 32228)
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+git log --oneline
+ee42a9b (HEAD -> master) Config: Added GitIgnore file to ignore class and jar files.
+57d8dfc WI1: Updated session timings in File1
+314ca39 WI1: File1 modified, num of session days added.
+f9e0584 WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --oneline -2
+ee42a9b (HEAD -> master) Config: Added GitIgnore file to ignore class and jar files.
+57d8dfc WI1: Updated session timings in File1
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log -author = "bhavesh"
+fatal: ambiguous argument '=': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log -author = "Bhavesh"
+fatal: ambiguous argument '=': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --author = "Bhavesh"
+fatal: ambiguous argument 'Bhavesh': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --author = "bhavesh"
+fatal: ambiguous argument 'bhavesh': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --author="Bhavesh"
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --author="bhavesh"
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --author="bhavesh" --oneline
+ee42a9b (HEAD -> master) Config: Added GitIgnore file to ignore class and jar files.
+57d8dfc WI1: Updated session timings in File1
+314ca39 WI1: File1 modified, num of session days added.
+f9e0584 WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log -help
+usage: git log [<options>] [<revision-range>] [[--] <path>...]
+   or: git show [<options>] <object>...
+
+    -q, --quiet           suppress diff output
+    --source              show source
+    --use-mailmap         use mail map file
+    --mailmap             alias of --use-mailmap
+    --decorate-refs <pattern>
+                          only decorate refs that match <pattern>
+    --decorate-refs-exclude <pattern>
+                          do not decorate refs that match <pattern>
+    --decorate[=...]      decorate options
+    -L <range:file>       trace the evolution of line range <start>,<end> or function :<funcname> in <file>
+
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --help
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --until="03/07/23"
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --until="03/07/2023"
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --until="07/03/2023"
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --until="07/03/2023" --oneline
+ee42a9b (HEAD -> master) Config: Added GitIgnore file to ignore class and jar files.
+57d8dfc WI1: Updated session timings in File1
+314ca39 WI1: File1 modified, num of session days added.
+f9e0584 WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --since="07/02/2023" --oneline
+ee42a9b (HEAD -> master) Config: Added GitIgnore file to ignore class and jar files.
+57d8dfc WI1: Updated session timings in File1
+314ca39 WI1: File1 modified, num of session days added.
+f9e0584 WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --grep="session"
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log --grep="Session"
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log .gitignore
+commit ee42a9bf6898d6c6e33fa82e7ce1cb50890ee642 (HEAD -> master)
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:09:54 2023 +0530
+
+    Config: Added GitIgnore file to ignore class and jar files.
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$ git log File1.txt
+commit 57d8dfc900c4c11b2152c01b8417f8a763adbfb6
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 15:00:25 2023 +0530
+
+    WI1: Updated session timings in File1
+
+commit 314ca3997a289a6112bb49b2e24ed395b8d0dea4
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:55:21 2023 +0530
+
+    WI1: File1 modified, num of session days added.
+
+commit f9e0584680e1064c10d71799de62a66a3f024e3f
+Author: bhavesh <bhavesh_tiwarekar@persistent.com>
+Date:   Mon Jul 3 14:33:56 2023 +0530
+
+    WI1: File1 created with welcome message
+
+bhavesh_tiwarekar@HJNZL001837 MINGW64 /d/Learning/Git/RBT3Jul23 (master)
+$
