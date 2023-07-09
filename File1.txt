@@ -5,3 +5,6 @@ Session Day2 details-
 Will cover git Diff command.
 Will also cover undo,revertt,reset on Day2.
 Will see the differene beyween them.
+Function ABC(){
+//Do something to fix the Bug123.
+}
