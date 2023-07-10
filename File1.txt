@@ -13,3 +13,4 @@ Function ABC(){
 }
 
 New line added to check stash demo. Work is in progress.
+New line added to check Pull with conflicts.
